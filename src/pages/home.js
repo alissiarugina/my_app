@@ -1,10 +1,10 @@
 import React from 'react';
 //import '../App.css';
 
-function Home() {
+
+export default function Home() {
 	return (
 		<div>
-
 			<section class="section">
 				<div class="box-main">
 					<div class="firstHalf">
@@ -37,4 +37,4 @@ function Home() {
 	)
 }
 
-export default Home
+
