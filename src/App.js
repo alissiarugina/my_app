@@ -7,11 +7,11 @@ import './App.css'
 
 import {
   BrowserRouter as Router,
-  Redirect,
   Switch,
   Routes,
   Route,
-  Link
+  Link,
+  NavLink
 } from "react-router-dom";
 
 
@@ -36,12 +36,12 @@ export default function App() {
 				</div>
 			</nav>
       </div>
-      <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/about" component={About} />
-        <Route path="/contact" component={Contact} />
-        <Route path="/resume" component={Resume} />
-        </Switch>
+      <Routes>
+        <Route path="/" element={<Home/>} />
+        <Route path="/about" element={<About/>} />
+        <Route path="/contact" element={<Contact/>} />
+        <Route path="/resume" element={<Resume/>} />
+      </Routes>
     </Router>
   );
 }
