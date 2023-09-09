@@ -23,8 +23,7 @@ export default function App() {
         <div id="logo">
             <img src= "AlissiaRuginaLogo.png" width='400px' height='auto' alt="" />
           </div>
-				<ul class="nav-list">
-				</ul>
+				
 
 				<div class="rightNav">
         <ul class="nav-list">
@@ -36,12 +35,12 @@ export default function App() {
 				</div>
 			</nav>
       </div>
-      <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/about" component={About} />
-        <Route path="/contact" component={Contact} />
-        <Route path="/resume" component={Resume} />
-        </Switch>
+      <Routes>
+        <Route path="/" exact element={<Home/>} />
+        <Route path="/about" element={<About/>} />
+        <Route path="/contact" element={<Contact/>} />
+        <Route path="/resume" element={<Resume/>} />
+        </Routes>
     </Router>
   );
 }
