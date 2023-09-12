@@ -4,7 +4,8 @@ import React from 'react';
 
 export default function Home() {
 	return (
-		<div>
+		<div >
+			
 			<section class="section">
 				<div class="box-main">
 					<div class="firstHalf">
@@ -21,7 +22,7 @@ export default function Home() {
             <p class="text-small">
               Thanks,
             </p>
-            <p class="text-small">
+            <p class="text-small" >
               Alissia Rugina
 						</p>
 					</div>

@@ -28,7 +28,7 @@ export default function App() {
 				<div class="rightNav">
         <ul class="nav-list">
 					<li><a href="/">Home</a></li>
-					<li><a href="/about">My Story</a></li>
+					<li><a href="/about">About </a></li>
 					<li><a href="/resume">My Resume</a></li>
 					<li><a href='/contact'>Contact Me!</a></li>
 				</ul>

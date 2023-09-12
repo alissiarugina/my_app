@@ -43,7 +43,7 @@ function About() {
 						<p class="card-text"> </p>
 					</div>
 					<ul class="list-group list-group-flush">
-						<li class="list-group-item">Tech & Business Innovations</li>
+						<li class="list-group-item">Tech & Business</li>
 						<li class="list-group-item">Sports: <br></br>Snowboarding <br></br>Running 
 						(<a href="https://www.strava.com/athletes/alissia_r" target = "_blank" style={{"text-decoration": "none"}} > check out my Strava! </a>)</li>
 						<li class="list-group-item">Travelling</li>
@@ -60,9 +60,7 @@ function About() {
 						I am interested in any entry level roles ranging from software development to business analyst, or anything in between!</p>
 					</div>
 					<ul class="list-group list-group-flush">
-						<li class="list-group-item"></li>
-						<li class="list-group-item"></li>
-						<li class="list-group-item"></li>
+						
 					</ul>
 					</div>
 					</Col>

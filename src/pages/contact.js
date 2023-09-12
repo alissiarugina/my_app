@@ -14,9 +14,10 @@ import { Container, Row, Col } from 'react-bootstrap'; // Import Bootstrap compo
 export default function Contact() {
 	return (
 		
-		<div>
+		<div style={{backgroundColor: 'transparent', height:'100%'}}>
+			<div style = {{backgroundColor : 'transparent'}}>
             
-			<section class="section">
+			<section class="section" style={{backgroundColor: 'transparent'}}>
 				<div class="box-main">
 					<div class="firstHalf">
 						<h1 class="text-big">
@@ -26,7 +27,7 @@ export default function Contact() {
 				</div>
 			</section>
 			
-
+			
 			<div class="card" style={{width: "18rem", margin: "auto"}}>
 			<div class="card-header">
 				My Info:
@@ -40,8 +41,13 @@ export default function Contact() {
 					<i class="bi bi-envelope"></i> alissiarugina@gmail.com</a></li>
 
 				<li class="list-group-item"> <i class="bi bi-telephone"></i> 437-669-0888</li>
+				<li class="list-group-item"> 
+					<a href="https://github.com/alissiarugina" target='_blank' style={{"text-decoration": "none"}}> <i class="bi bi-github"></i> alissiarugina</a>
+				</li>
 			</ul>
 			</div>
+			</div>
+
 				</div>
 	)
 }

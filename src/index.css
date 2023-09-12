@@ -156,4 +156,9 @@ background-color: #000;
   margin: 20px 0; /* Adjust the margin to control the spacing above and below the line */
 }
 
+.cursive-name {
+	font-size: 24px;
+	font-family: cursive;
+}
+
 
