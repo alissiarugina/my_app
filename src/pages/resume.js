@@ -36,9 +36,9 @@ export default function Resume() {
 	  }
 
 	return (
-		<div>
-			<section class="section">
-				<div class="box-main">
+		<div style={{backgroundImage:'url("beach_background.jpg")', backgroundSize:'cover', height:'100%'}}>
+			<section class="section" style={{backgroundColor:'transparent'}}>
+				<div class="box-main" style={{backgroundColor:'white', width:'content', justifyItems:'center', alignItems:'center', borderRadius:'8px'}}>
 					<div class="firstHalf">
 						<h1 class="text-big">
 							My Resume! 
@@ -53,31 +53,13 @@ export default function Resume() {
 				</a></nav>
 				<div class="d-flex justify-content-center">
 			<Document file="AlissiaResumeFULL.pdf" onLoadError={console.error} onLoadSuccess={onDocumentLoadSuccess}>
-            	<Page pageNumber={pageNumber} renderTextLayer={false} renderAnnotationLayer={false}/>
+            	<Page pageNumber={1} renderTextLayer={false} renderAnnotationLayer={false}/>
+				<Page pageNumber={2} renderTextLayer={false} renderAnnotationLayer={false}/>
 				</Document>
 				</div>
 				</div>
 
-				<div className="pagec" class="d-flex justify-content-center">
-				Page {pageNumber || (numPages ? 1 : '--')} of {numPages || '--'}
-				</div>
-				<div className="buttonc" class="d-flex justify-content-center">
-				<button
-				type="button"
-				disabled={pageNumber <= 1}
-				onClick={previousPage}
-				className="Pre"
-					
-				>
-				Previous
-				</button>
-				<button
-				type="button"
-				disabled={pageNumber >= numPages}
-				onClick={nextPage}>
-				Next
-				</button>
-				</div>
+				
 				</div>
 
 

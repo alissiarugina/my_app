@@ -14,11 +14,11 @@ import { Container, Row, Col } from 'react-bootstrap'; // Import Bootstrap compo
 export default function Contact() {
 	return (
 		
-		<div style={{backgroundColor: 'transparent', height:'100%'}}>
+		<div style={{backgroundImage:'url("beach_background.jpg")', height:'100vh', backgroundSize:'cover'}}>
 			<div style = {{backgroundColor : 'transparent'}}>
             
 			<section class="section" style={{backgroundColor: 'transparent'}}>
-				<div class="box-main">
+				<div class="box-main" style={{backgroundColor:'white', width:'18rem', justifyItems:'center', alignItems:'center', borderRadius:'8px'}}>
 					<div class="firstHalf">
 						<h1 class="text-big">
 							Contact Me! 

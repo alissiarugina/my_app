@@ -5,10 +5,10 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 function About() {
 	return (
-		<div >
-			<section class="section">
-				<div class="box-main">
-					<div class="firstHalf">
+		<div style={{backgroundImage:'url("beach_background.jpg")', height:'100vh', backgroundSize:'cover'}}>
+			<section class="section" style={{backgroundColor:'transparent', justifyContent:'center', alignItems:'center'}} >
+				<div class="box-main" style={{backgroundColor:'white', width:'57rem', justifyItems:'center', alignItems:'center', borderRadius:'8px'}}>
+					<div class="firstHalf" style={{justifyContent:'center'}}>
 						<h1 class="text-big">
 							About Me! 
 						</h1>
