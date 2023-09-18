@@ -36,9 +36,9 @@ export default function Resume() {
 	  }
 
 	return (
-		<div style={{backgroundImage:'url("beach_background.jpg")', backgroundSize:'cover', height:'100%'}}>
-			<section class="section" style={{backgroundColor:'transparent'}}>
-				<div class="box-main" style={{backgroundColor:'white', width:'content', justifyItems:'center', alignItems:'center', borderRadius:'8px'}}>
+		<div style={{backgroundImage:'url("beach_background.jpg")', backgroundSize:'cover', height:'100%', boxSizing:'border-box', paddingLeft:'0', paddingRight:'0'}}>
+			<section style={{backgroundColor:'transparent'}}>
+				<div style={{display: 'flex', justifyContent:'center', backgroundColor:'white', width:'100%', justifyItems:'center', alignItems:'center',boxSizing:'border-box', paddingLeft:'0', paddingRight:'0'}}>
 					<div class="firstHalf">
 						<h1 class="text-big">
 							My Resume! 
@@ -47,14 +47,14 @@ export default function Resume() {
 				</div>
 				</section>
         
-			<div>	
+			<div >	
 			<nav class="d-flex justify-content-center"><a href={"AlissiaResumeFULL.pdf"} download="AlissiaRuginaResume.pdf" target="_blank" rel="noreferrer">
-					<button>Download AlissiaRuginaResume.pdf</button>
+					<button class="button" style={{marginTop:'10px', marginBottom:'10px'}} >Download Resume</button>
 				</a></nav>
 				<div class="d-flex justify-content-center">
 			<Document file="AlissiaResumeFULL.pdf" onLoadError={console.error} onLoadSuccess={onDocumentLoadSuccess}>
             	<Page pageNumber={1} renderTextLayer={false} renderAnnotationLayer={false}/>
-				<Page pageNumber={2} renderTextLayer={false} renderAnnotationLayer={false}/>
+	
 				</Document>
 				</div>
 				</div>

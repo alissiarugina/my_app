@@ -28,7 +28,7 @@ export default function App() {
 				<div class="rightNav">
         <ul class="nav-list">
 					<li><a href="/">Home</a></li>
-					<li><a href="/about">About </a></li>
+					<li><a href="/about">About Me</a></li>
 					<li><a href="/resume">My Resume</a></li>
 					<li><a href='/contact'>Contact Me!</a></li>
 				</ul>
@@ -41,7 +41,11 @@ export default function App() {
         <Route path="/contact" element={<Contact/>} />
         <Route path="/resume" element={<Resume/>} />
         </Routes>
+        <div style={{backgroundColor:'#A6CAFDff',  left:'0', bottom:'0', textAlign:'center', height:'fit-content', width:'100%'}}>
+          <img src= "AlissiaRuginaLogo.png" width='100px' height='auto' alt="" style={{left:'0', bottom:'0'}} />
+        </div>
     </Router>
+    
   );
 }
 

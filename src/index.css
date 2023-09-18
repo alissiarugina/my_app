@@ -162,3 +162,15 @@ background-color: #000;
 }
 
 
+.button {
+	transition-duration: 0.4s;
+	margin: 10px;
+	background-color:  rgb(190, 216, 251); /* Green */
+	color: rgb(0, 0, 0);
+  }
+
+  
+.button:hover {
+	background-color: #000000; /* Green */
+	color: rgb(190, 216, 251);
+  }

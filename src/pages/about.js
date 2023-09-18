@@ -6,8 +6,8 @@ import { Container, Row, Col } from 'react-bootstrap';
 function About() {
 	return (
 		<div style={{backgroundImage:'url("beach_background.jpg")', height:'100vh', backgroundSize:'cover'}}>
-			<section class="section" style={{backgroundColor:'transparent', justifyContent:'center', alignItems:'center'}} >
-				<div class="box-main" style={{backgroundColor:'white', width:'57rem', justifyItems:'center', alignItems:'center', borderRadius:'8px'}}>
+			<section style={{width:'100%', backgroundColor:'transparent', justifyContent:'center', alignItems:'center',  boxSizing:'border-box', paddingLeft:'0', paddingRight:'0'}} >
+				<div style={{display: 'flex', justifyContent:'center', width:'100%', backgroundColor:'white', justifyItems:'center', alignItems:'center',  boxSizing:'border-box', paddingLeft:'0', paddingRight:'0'}}>
 					<div class="firstHalf" style={{justifyContent:'center'}}>
 						<h1 class="text-big">
 							About Me! 
@@ -17,11 +17,11 @@ function About() {
 				</section>
 
 				<div >
-				<Container style={{display: 'flex', justifyContent:'center'}}>
+				<Container style={{display: 'flex', justifyContent:'center', marginTop:'20px'}}>
 				<Row>
 					<Col>
-					<div class="card" style={{width: "18rem"}}>
-					<img src="tudelftpic.jpg" class="card-img-top" alt="..."/>
+					<div class="card border-dark mb-3" style={{width: "18rem", borderRadius:'0'}}>
+					<img style={{borderRadius:'0'}}  src="tudelftpic.jpg" class="card-img-top" alt="..."/>
 					<div class="card-body">
 						<h5 class="card-title">My Education</h5>
 						<p class="card-text">
@@ -36,8 +36,8 @@ function About() {
 					</div>
 					</Col>
 					<Col>
-					<div class="card" style={{width: "18rem"}}>
-					<img src="snowboardpic.jpg" class="card-img-top" alt="..."/>
+					<div class="card border-dark mb-3" style={{width: "18rem",  borderRadius:'0'}}>
+					<img style={{borderRadius:'0'}}  src="snowboardpic.jpg" class="card-img-top" alt="..."/>
 					<div class="card-body">
 						<h5 class="card-title">My Interests</h5>
 						<p class="card-text"> </p>
@@ -51,8 +51,8 @@ function About() {
 					</div>
 					</Col>
 					<Col>
-					<div class="card" style={{width: "18rem"}}>
-					<img src="https://images.unsplash.com/photo-1605853892843-002250989e7d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8dG9yb250byUyMHNreWxpbmV8ZW58MHx8MHx8fDA%3D&w=1000&q=80" class="card-img-top" alt="..."/>
+					<div class="card border-dark mb-3" style={{width: "18rem",  borderRadius:'0'}}>
+					<img  style={{borderRadius:'0'}} src="https://images.unsplash.com/photo-1605853892843-002250989e7d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8dG9yb250byUyMHNreWxpbmV8ZW58MHx8MHx8fDA%3D&w=1000&q=80" class="card-img-top" alt="..."/>
 					<div class="card-body">
 						<h5 class="card-title">My Goals</h5>
 						<p class="card-text">

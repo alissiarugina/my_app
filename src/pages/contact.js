@@ -14,11 +14,11 @@ import { Container, Row, Col } from 'react-bootstrap'; // Import Bootstrap compo
 export default function Contact() {
 	return (
 		
-		<div style={{backgroundImage:'url("beach_background.jpg")', height:'100vh', backgroundSize:'cover'}}>
+		<div style={{backgroundImage:'url("beach_background.jpg")', height:'80vh', backgroundSize:'cover', boxSizing:'border-box', paddingLeft:'0', paddingRight:'0'}}>
 			<div style = {{backgroundColor : 'transparent'}}>
             
-			<section class="section" style={{backgroundColor: 'transparent'}}>
-				<div class="box-main" style={{backgroundColor:'white', width:'18rem', justifyItems:'center', alignItems:'center', borderRadius:'8px'}}>
+			<section style={{backgroundColor: 'transparent'}}>
+				<div style={{display: 'flex',width:'100%', justifyContent:'center', backgroundColor:'white', justifyItems:'center', alignItems:'center', boxSizing:'border-box', paddingLeft:'0', paddingRight:'0'}}>
 					<div class="firstHalf">
 						<h1 class="text-big">
 							Contact Me! 
@@ -28,7 +28,7 @@ export default function Contact() {
 			</section>
 			
 			
-			<div class="card" style={{width: "18rem", margin: "auto"}}>
+			<div class="card border-dark mb-3" style={{width: "18rem", margin: "auto", marginTop:'20px', borderRadius:'0'}}>
 			<div class="card-header">
 				My Info:
 			</div>
