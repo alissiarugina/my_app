@@ -37,7 +37,7 @@ export default function Home() {
 						</h1>
 						<p class='text-small'>Hope you enjoy my site! <br></br>
 						Feel free to 
-						<a href='/contact' style={{"text-decoration": "none"}}> contact me </a>
+						<a href='#/contact' style={{"text-decoration": "none"}}> contact me </a>
 						 for any questions or opportunities.
 						<br></br>
 						<br></br>

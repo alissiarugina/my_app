@@ -8,6 +8,7 @@ import './App.css'
 import {
   BrowserRouter as Router,
   Redirect,
+  HashRouter,
   Switch,
   Routes,
   Route,
@@ -17,7 +18,7 @@ import {
 
 export default function App() {
   return (
-    <Router>
+    <HashRouter>
       <div>
 			<nav class="navbar background">
         <div id="logo">
@@ -28,9 +29,9 @@ export default function App() {
 				<div class="rightNav">
         <ul class="nav-list">
 					<li><a href="/">Home</a></li>
-					<li><a href="/about">About Me</a></li>
-					<li><a href="/resume">My Resume</a></li>
-					<li><a href='/contact'>Contact Me!</a></li>
+					<li><a href="#/about">About Me</a></li>
+					<li><a href="#/resume">My Resume</a></li>
+					<li><a href='#/contact'>Contact Me!</a></li>
 				</ul>
 				</div>
 			</nav>
@@ -44,7 +45,7 @@ export default function App() {
         <div style={{backgroundColor:'#A6CAFDff',  left:'0', bottom:'0', textAlign:'center', height:'fit-content', width:'100%'}}>
           <img src= "AlissiaRuginaLogo.png" width='100px' height='auto' alt="" style={{left:'0', bottom:'0'}} />
         </div>
-    </Router>
+    </HashRouter>
     
   );
 }
