@@ -5,7 +5,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 function About() {
 	return (
-		<div style={{backgroundImage:'url("beach_background.jpg")', height:'100vh', backgroundSize:'cover'}}>
+		<div style={{width:'100%', backgroundImage:'url("beach_background.jpg")', height:'100vh', backgroundSize:'cover'}}>
 			<section style={{width:'100%', backgroundColor:'transparent', justifyContent:'center', alignItems:'center',  boxSizing:'border-box', paddingLeft:'0', paddingRight:'0'}} >
 				<div style={{display: 'flex', justifyContent:'center', width:'100%', backgroundColor:'white', justifyItems:'center', alignItems:'center',  boxSizing:'border-box', paddingLeft:'0', paddingRight:'0'}}>
 					<div class="firstHalf" style={{justifyContent:'center'}}>
