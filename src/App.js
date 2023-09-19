@@ -17,7 +17,7 @@ import {
 
 export default function App() {
   return (
-    <Router>
+    <Router basename='/'>
       <div>
 			<nav class="navbar background">
         <div id="logo">
